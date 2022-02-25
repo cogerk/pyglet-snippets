@@ -2,6 +2,12 @@ import pyglet
 
 pyglet.resource.path = ["./resources"]
 
+###### CREATE RESOURCES AND SPRITES THAT KNOW THEIR FILENAMES ######
+# Kathryn Cogert
+"""
+I wanted my unit tests to tell me the name of the sprite that failed, and these helper functions can keep track of filename when loading images or creating sprites.
+"""
+
 # Attach image filename to image when loading
 def load_image(filename):
     image = pyglet.resource.image(filename)
